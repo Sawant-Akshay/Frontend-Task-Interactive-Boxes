@@ -1,0 +1,344 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  padding:30px 80px;
+  max-width: 600px;
+  position: absolute;
+  left: 25%;
+}
+
+.standard-price{
+  position: absolute;
+  left: 50px;
+  top:25px;
+}
+
+.with-lines {
+  display: inline-block;
+  position: relative;
+  color: #F79F9F;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.with-lines::before,
+.with-lines::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%; 
+  height: 1px;
+  background-color:black;
+}
+
+.with-lines::before {
+  left: 0;
+  transform: translateX(-105%);
+}
+
+.with-lines::after {
+  right: 0;
+  transform: translateX(105%);
+}
+
+.price-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.price-left span {
+  height: 15px;
+  width: 80px;
+  margin-left: 5px;
+  border: 2px solid #F79F9F;
+  background-color: #F79F9F;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.price-right {
+  position: relative;
+  top: -20px;
+  float: right;
+}
+
+.txt {
+  text-decoration: line-through;
+  color: gainsboro;
+  margin: 3px 0 0 18px;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  overflow: visible; 
+}
+
+.badge {
+  position: absolute;
+  top: -10px; 
+  right: 10px; 
+  background-color: #ff6347; 
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px; 
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.box h3 {
+  margin: 0;
+}
+
+.box.expanded {
+  background-color: #FAE4E4;
+  border:3px solid #F79F9F;
+}
+
+.content {
+  display: none;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.content.show {
+  display: block;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top:40%;
+  left: 15%;
+  gap: 10px;
+}
+
+.l-size {
+  margin-left: -38px;
+}
+
+.size {
+  width: 90px;
+}
+
+.btn {
+  width: 540px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #F79F9F;
+  color: #f1f1f1;
+  border: none;
+ font-size: 16px;
+}
+
+.btn .add-btn{
+  position: relative;
+  top: 5px;
+  font-size: 1.8rem;
+  line-height: 1;
+
+}
+
+.field-btn { 
+  max-width: 540px;
+}
+
+.left-txt {
+  float: left;
+  color: #F79F9F;
+}
+
+.right-txt {
+  float: right;
+}
+
+.sponser{
+  float:right;
+  margin:5px;
+  color: gainsboro;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 5px;
+  width: 120px;
+}
+
+/* Meria queries */
+
+@media (max-width:1024px){
+  .container {
+    position: absolute;
+    left: 22%;
+    max-width: 500px;
+  }
+
+  .l-size {
+    margin-left: -20px;
+  }
+
+  .badge {
+    font-size: 1em;
+  }
+
+  .price-left {
+    font-size: 1.5em;
+  }
+  
+  .price-right {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width:912px){
+  .container {
+    position: absolute;
+    left: 20%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width:820px){
+  .container {
+    position: absolute;
+    left: 17%;
+    max-width: 400px;
+  }
+  .size {
+    width: 70px; 
+  }
+  .l-size {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: absolute;
+    left: 16%;
+    max-width: 400px;
+  }
+
+  .size {
+    width: 70px; 
+  }
+
+  .badge {
+    font-size: 0.8em;
+  }
+
+  .price-left {
+    font-size: 0.9em;
+  }
+
+  .price-right {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:540px){
+  .container {
+    position: absolute;
+    left: 0;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    position: absolute;
+    left: 4%;
+    max-width: 200px;
+  }
+
+  .with-lines {
+    font-size: 1.25rem;
+  }
+
+ .with-lines::before,
+ .with-lines::after {
+  top: 50%;
+  width: 45%; 
+}
+
+  .with-lines::before {
+    transform: translateX(-110%);
+  }
+  
+  .with-lines::after {
+    transform: translateX(110%);
+  }
+
+  .box {
+    position: relative;
+    width: 250px;
+  }
+
+  .badge {
+    font-size: 0.5rem;
+  }
+
+  .price-left {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+  }
+  
+  .price-left span {
+    height: 15px;
+    width: 60px;
+    text-align: center;
+  }
+  .standard-price{
+    position: absolute;
+    left: 50px;
+    top:35px;
+  }
+
+  .price-right {
+    position: relative;
+    top:-20px;
+    right:-10px;
+    font-size: 0.8em;
+  }
+
+  .btn {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #F79F9F;
+    color: #f1f1f1;
+    border: none;
+   font-size: 1em;
+  }
+
+.size {
+  width: 70px; 
+}
+
+.field-btn{
+  font-size: 0.8rem;
+}
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="with-lines"><span>YAY! It's BOGO</span></h1>
+    <div class="box" onclick="toggleBox(1)">
+    <div class="price-left">
+        <input type="radio" id="radio1" name="radio"/>
+        <h3 style="margin-left: 10px;">1 Unit</h3>
+        <span>10% Off</span>
+        <p class="standard-price">Standard Price</p>  
+    </div> 
+    <div class="price-right">
+        <span>$10.00 USD</span>
+        <p class="txt">$24.00 USD</p>
+    </div>  
+     
+      <div class="content" id="content1">
+        <div class="form-container">
+        <div class="dropdowns">
+            <div>
+              <label for="size1" class="l-size">Size</label>
+              <span>#1</span>
+              <select id="size1" class="size" >            
+                <option value="">Select</option>
+                <option value="Small">S</option>
+                <option value="Medium">M</option>
+                <option value="Large">L</option>
+              </select>
+            </div>
+            <div>
+              <label for="size2"></label>
+              <span>#2</span>
+              <select id="size2" class="size">
+                <option value="">Select</option>
+                <option value="Extra Small">XS</option>
+                <option value="Extra Large">XL</option>
+              </select>
+            </div>
+          </div>
+        <div class="dropdowns">
+          <div>
+            <label for="color1" class="l-size">Color</label>
+            <select id="color1" class="size">
+              <option value="">Select</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+          <div>
+            <label for="color2"></label>
+            <select id="color2" class="size">
+              <option value="">Select</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(2)">
+      <div class="badge">Most Popular</div>
+        <div class="price-left">
+            <input type="radio" name="radio"/>
+            <h3 style="margin-left: 10px;">2 Unit</h3>
+            <span>20% Off</span> 
+        </div> 
+        <div class="price-right">
+            <span>$18.00 USD</span>
+            <p class="txt">$24.00 USD</p>
+        </div>  
+      <div class="content" id="content2">
+       <div class="form-container">
+        <div class="dropdowns">
+            <div>
+                <label for="size3" class="l-size">Size</label>
+                <span>#1</span>
+                <select id="size3" class="size">
+                  <option value="">Select</option>
+                  <option value="Small">S</option>
+                  <option value="Medium">M</option>
+                  <option value="Large">L</option>
+                </select>
+              </div>
+              <div>
+                <label for="size4"></label>
+                <span>#2</span>
+                <select id="size4" class="size">
+                  <option value="">Select</option>
+                  <option value="Extra Small">XS</option>
+                  <option value="Extra Large">XL</option>
+                </select>
+              </div>
+         
+        </div>
+        <div class="dropdowns">
+         <div>
+            <label for="color3" class="l-size">Color</label>
+            <select id="color3" class="size">
+              <option value="">Select</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+          </div>
+          <div>
+            <label for="color4"></label>
+            <select id="color4" class="size">
+              <option value="">Select</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(3)">
+        <div class="price-left">
+            <input type="radio" name="radio"/>
+            <h3 style="margin-left: 10px;">3 Unit</h3>
+            <span>30% Off</span>
+        </div> 
+        <div class="price-right">
+            <span>$24.00 USD</span>
+            <p class="txt">$24.00 USD</p>
+        </div>  
+        <div class="content" id="content3">
+         <div class="form-container">
+          <div class="dropdowns">
+              <div>
+                  <label for="size3" class="l-size">Size</label>
+                  <span>#1</span>
+                  <select id="size3" class="size">
+                    <option value="">Select</option>
+                    <option value="Small">S</option>
+                    <option value="Medium">M</option>
+                    <option value="Large">L</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="size4"></label>
+                  <span>#2</span>
+                  <select id="size4" class="size">
+                    <option value="">Select</option>
+                    <option value="Extra Small">XS</option>
+                    <option value="Extra Large">XL</option>
+                  </select>
+                </div>
+           
+          </div>
+          <div class="dropdowns">
+           <div>
+              <label for="color3" class="l-size">Color</label>
+              <select id="color3" class="size">
+                <option value="">Select</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+            </div>
+            <div>
+              <label for="color4"></label> 
+              <select id="color4" class="size">
+                <option value="">Select</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+              </select>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="field-btn">
+        <span class="left-txt">Free Delivery</span>
+        <span class="right-txt">Total:$ 18.00 USD</span>
+        <button class="btn"><span class="add-btn">+</span> Add to Cart</button>
+        <span class="sponser">@ Powered by Pumper</span>
+      </div>
+      
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
